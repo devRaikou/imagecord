@@ -121,7 +121,6 @@ card.setTheme('my-theme');
 ## 👨‍💻 Author
 
 **Raikou**  
-Senior Node.js Library Architect
 
 ---
 
