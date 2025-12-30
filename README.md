@@ -4,9 +4,9 @@
 
   **The Professional Discord Image Generation Library**
   
-  [![npm version](https://img.shields.io/npm/v/imagecord?style=flat-square)](https://www.npmjs.com/package/imagecord)
-  [![License](https://img.shields.io/npm/l/imagecord?style=flat-square)](LICENSE)
-  [![Downloads](https://img.shields.io/npm/dt/imagecord?style=flat-square)](https://www.npmjs.com/package/imagecord)
+  [![npm version](https://img.shields.io/npm/v/@devraikou/imagecord?style=flat-square)](https://www.npmjs.com/package/@devraikou/imagecord)
+  [![License](https://img.shields.io/npm/l/@devraikou/imagecord?style=flat-square)](LICENSE)
+  [![Downloads](https://img.shields.io/npm/dt/@devraikou/imagecord?style=flat-square)](https://www.npmjs.com/package/@devraikou/imagecord)
 
 </div>
 
@@ -25,7 +25,7 @@
 ## 📦 Installation
 
 ```bash
-npm install imagecord @napi-rs/canvas discord.js
+npm install @devraikou/imagecord @napi-rs/canvas discord.js
 ```
 
 ## ⚡ Quick Start
@@ -33,7 +33,7 @@ npm install imagecord @napi-rs/canvas discord.js
 ### 1. Simple Rank Card
 
 ```js
-import { RankCard } from 'imagecord';
+import { RankCard } from '@devraikou/imagecord';
 import { AttachmentBuilder } from 'discord.js';
 
 client.on('messageCreate', async message => {
@@ -61,7 +61,7 @@ client.on('messageCreate', async message => {
 ### 2. Welcome Image
 
 ```js
-import { WelcomeCard } from 'imagecord';
+import { WelcomeCard } from '@devraikou/imagecord';
 
 client.on('guildMemberAdd', async member => {
   const channel = member.guild.channels.cache.get('WELCOME_CHANNEL_ID');
@@ -95,7 +95,7 @@ card.setTheme('glass');
 
 **Custom Theme:**
 ```js
-import { themeManager } from 'imagecord';
+import { themeManager } from '@devraikou/imagecord';
 
 themeManager.register('my-theme', {
   colors: {
